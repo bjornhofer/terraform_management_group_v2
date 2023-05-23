@@ -13,7 +13,7 @@ locals {
     layer4 = distinct(flatten([for layer1 in local.folders : try(split("/", layer1)[4], [])]))
     layer5 = distinct(flatten([for layer1 in local.folders : try(split("/", layer1)[5], [])]))
 }
-
+/*
 output "folderstructure" {
   value = local.folderstructure
 }
@@ -44,4 +44,25 @@ output "layer4" {
 
 output "layer5" {
   value = local.layer5
+}
+*/
+
+// Management Group
+/*
+resource "azurerm_management_group" "management_group" {
+  for_each = { for layer0 in local.layer0 : layer0 => layer0 }
+  name     = each.value
+  display_name = each.value
+  parent_management_group_id = var.parent_management_group_id
+}
+*/
+
+//for_each = { for layer0 in local.layer0 : layer0 => layer0 }
+locals {
+  layer0_setting = jsondecode(file("${each.value}management_group.json"))
+}
+
+resource "azurerm_management_group" "management_group" {
+  for_each = local.layer0_setting
+  name = each.name
 }
