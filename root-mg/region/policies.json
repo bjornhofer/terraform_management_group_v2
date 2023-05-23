@@ -1,0 +1,9 @@
+{
+    "securtiy-center" : {
+        "module-name": "azure-policy-security-center",
+        "event_hub_name": "group-foundserv-prod-rg-eventhub-seclog-evhubname",
+        "auth_name": "group_foundserv_prod_rg_eventhub",
+        "auth_namespace_name": "group-foundserv-prod-rg-eventhub-securitylogging",
+        "auth_resource_group_name": "group-foundserv-prod-rg-eventhub"
+    }
+}
