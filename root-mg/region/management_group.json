@@ -1,4 +1,4 @@
 {
-    "name": "emea",
-    "parent": "region"
+    "name": "region",
+    "parent": "root-mg"
 }
