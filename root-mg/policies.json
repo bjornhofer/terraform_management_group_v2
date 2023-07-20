@@ -1,0 +1,18 @@
+
+[
+    {
+     "policy_filename" :  "cis-10.6-res-mandatory-tags.json",
+     "policy_name" : "cis-10.6-res-mandatory-tags",
+     "display_name" : "cis-10.6-res-mandatory-tags",
+     "policy_category" : "tags",
+     "assignment_name" : "mandatorytagsres"
+     
+   },
+   {
+     "policy_filename" :  "cis-10.6-rg-mandatory-tags.json",
+     "policy_name" : "cis-10.6-rg-mandatory-tags",
+     "display_name" : "cis-10.6-rg-mandatory-tags",
+     "policy_category" : "tags",
+     "assignment_name" : "mandatorytagsrg"
+   }
+]

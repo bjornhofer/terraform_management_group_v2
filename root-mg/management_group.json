@@ -1,3 +1,4 @@
 {
-    "name": "mg-root"
+    "name": "mg-root",
+    "existing": true
 }

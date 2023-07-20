@@ -1,9 +1,9 @@
-{
-    "securtiy-center" : {
-        "module-name": "azure-policy-security-center",
-        "event_hub_name": "group-foundserv-prod-rg-eventhub-seclog-evhubname",
-        "auth_name": "group_foundserv_prod_rg_eventhub",
-        "auth_namespace_name": "group-foundserv-prod-rg-eventhub-securitylogging",
-        "auth_resource_group_name": "group-foundserv-prod-rg-eventhub"
-    }
-}
+[
+    {
+     "policy_filename" :  "cis-10.6-res-mandatory-tags.json",
+     "policy_name" : "cis-10.6-res-mandatory-tags",
+     "display_name" : "cis-10.6-res-mandatory-tags",
+     "policy_category" : "tags",
+     "assignment_name" : "mandatorytagsres"
+   }
+]

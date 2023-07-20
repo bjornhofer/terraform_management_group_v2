@@ -1,20 +1,9 @@
-{
-    "securtiy-center" : {
-        "module-name": "azure-policy-security-center",
-        "event_hub_name": "group-foundserv-prod-rg-eventhub-seclog-evhubname",
-        "auth_name": "group_foundserv_prod_rg_eventhub",
-        "auth_namespace_name": "group-foundserv-prod-rg-eventhub-securitylogging",
-        "auth_resource_group_name": "group-foundserv-prod-rg-eventhub"
-    },
-    "policy-diagnostics_northeurope": {
-        "module-name": "azure-policy-diagnostics",
-        "location": "northeurope",
-        "scope": "module.management-group-ccp.id",
-        "not_scopes": [],
-        "management_group_name": "emea-ccp-mg",
-        "resource_type": "nsg",
-        "auth_name": "RootManageSharedAccessKey",
-        "auth_namespace_name": "group-foundserv-prod-rg-eventhub-securitylogging",
-        "auth_resource_group_name": "group-foundserv-prod-rg-eventhub"
+[
+    {
+      "policy_filename" :  "cis-10.6-rg-mandatory-tags.json",
+      "policy_name" : "cis-10.6-rg-mandatory-tags",
+      "display_name" : "cis-10.6-rg-mandatory-tags",
+      "policy_category" : "tags",
+      "assignment_name" : "mandatorytagsrg"
     }
-}
+ ]
