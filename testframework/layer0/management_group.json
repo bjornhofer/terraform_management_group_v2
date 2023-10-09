@@ -1,4 +1,4 @@
 {
     "name": "layer0",
-    "parent": "mg-root"
+    "parent": "testframework"
 }
